@@ -14,13 +14,13 @@ This project implements a Spiking Neural Network (SNN) model that performs both 
 ## Project Structure
 
 snn-radar-unified/
-├── results/ # Outputs are saved here
-├── src/ # Main source code
-├── test.py # Seperate testing module
-├── grid_search_snn/cnn # To perform grid search
-├── requirements.txt # Dependencies
-└── README.md # This file
+  - results/ # Outputs are saved here
+  - src/ # Main source code
+  - test.py # Seperate testing module
+  - grid_search_snn/cnn # To perform grid search
+  - requirements.txt # Dependencies
+  - README.md # This file
 
 ## How to run the script
 
-From root directory, on the terminal execute the following command: python -m src.main
+From root directory, on the terminal execute the following command: python -m src.main --model_type cnn/cnn_mlp/snn_hybrid/snn_e2e
