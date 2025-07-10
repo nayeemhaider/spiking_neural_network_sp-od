@@ -13,7 +13,7 @@ This project implements a Spiking Neural Network (SNN) model that performs both 
 
 ## Project Structure
 
-snn-radar-unified/
+spiking_neural_network_sp-od/
   - results/ # Outputs are saved here
   - src/ # Main source code
   - test.py # Seperate testing module
