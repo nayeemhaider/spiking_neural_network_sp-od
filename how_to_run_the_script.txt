@@ -1,0 +1,1 @@
+root_directory/python -m src.main --model_type cnn/cnn_mlp/snn_hybrid/snn_e2e

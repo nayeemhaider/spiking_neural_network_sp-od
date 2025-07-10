@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  snn-trainer:
+    build: .
+    runtime: nvidia # Use the NVIDIA runtime for GPU access
+    volumes:
+      # Mount the local data folder to /app/data in the container
+      - ./data:/app/data:ro # ro = read-only, safer for dataset
+      # Mount the local results folder to /app/results in the container
+      - ./results:/app/results:rw # rw = read-write, to save outputs
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    # Keep stdin open to allow for interactive sessions if needed
+    stdin_open: true
+    # Allocate a pseudo-TTY
+    tty: true
