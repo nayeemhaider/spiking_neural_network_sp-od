@@ -31,8 +31,8 @@ def run_snn_grid_search(args):
 
     param_grid = {
         'neuron_threshold': [0.8, 1.0, 1.2],     # Adjusted for more reasonable spiking
-        'neuron_alpha': [0.8, 0.7, 0.6],         # Membrane potential decay (leak)
-        'neuron_beta': [0.5, 0.8]                # Higher beta is common for integration             
+        'neuron_alpha': [0.5, 0.3, 0.7],         # Membrane potential decay (leak)
+        'neuron_beta': [0.5, 0.9, 0.7]           # Higher beta is common for integration             
     }
 
     # Configure search settings

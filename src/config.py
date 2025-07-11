@@ -80,10 +80,10 @@ TRAINING_CONFIG = {
     'sp_loss_weight': 1.0,          # Weight for the signal processing loss component
     'od_loss_weight': 1.0,          # Weight for the object detection loss component
 
-    'neuron_threshold': 0.8,    # threshold
-    'neuron_alpha': 0.6,        # current damping constant
-    'neuron_beta': 0.8,         # potential damping constant
-    'sg_alpha': 5.0
+    'neuron_threshold': 1.0,    # threshold
+    'neuron_alpha': 0.3,        # current damping constant
+    'neuron_beta': 0.9,         # potential damping constant
+    'sg_alpha': 2.0
 }
 
 # --- SIGNAL PROCESSING (SP) TARGET GENERATION CONFIG ---
